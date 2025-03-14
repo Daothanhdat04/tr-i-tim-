@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Trần Khánh Linh - Lấp lánh huyền ảo</title>
     <style>
         body {
@@ -23,6 +23,8 @@
             text-shadow: 0 0 3px #fff, 0 0 7px #ffcc00, 0 0 12px #ffcc00, 0 0 18px #f06, 0 0 22px #f06;
             position: relative;
             animation: glow 1.5s infinite alternate;
+            text-align: center;
+            padding: 20px;
         }
 
         @keyframes glow {
@@ -53,6 +55,13 @@
             to {
                 transform: translateY(-100px);
                 opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .glow-text {
+                font-size: 50px;
+                padding: 10px;
             }
         }
     </style>
